@@ -32,7 +32,9 @@
       "error",
       {
         "selector": "interface",
-        "format": ["PascalCase"],
+        "format": [
+          "PascalCase"
+        ],
         "custom": {
           "regex": "^I[A-Z]",
           "match": true
@@ -41,6 +43,7 @@
     ],
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
+    
     "no-shadow": "off",
     "no-console": "off",
     "no-useless-constructor": "off",
@@ -58,7 +61,15 @@
       "warn",
       {
         "newlinesBetween": "always",
-        "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
+        "groups": [
+          "module",
+          "/^@shared/",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
+        ],
         "alphabetize": {
           "order": "asc",
           "ignoreCase": true
@@ -68,19 +79,28 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/*.spec.js"]
+        "devDependencies": [
+          "**/*.spec.js"
+        ]
       }
     ],
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".jsx", ".tsx"]
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
       }
     ],
     "react/react-in-jsx-scope": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react/style-prop-object": "off",
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"]
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ]
   },
   "settings": {
     "import/resolver": {
