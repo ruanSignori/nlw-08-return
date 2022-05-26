@@ -8,7 +8,7 @@ app.use(cors()); // security
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
   console.log('Server ON http://192.168.0.176:3333')
 })
 
